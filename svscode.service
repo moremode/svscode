@@ -1,0 +1,9 @@
+[Unit]
+Description=VSCode server
+
+[Service]
+Type=simple
+ExecStart=/bin/code-server.sh
+
+[Install]
+WantedBy=multi-user.target

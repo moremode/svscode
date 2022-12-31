@@ -1,0 +1,8 @@
+#!/bin/bash 
+
+wget -O- https://aka.ms/install-vscode-server/setup.sh | sh
+sudo cp ./code-server.sh /bin/code-server.sh
+sudo cp ./svscode /bin/svscode
+sudo cp ./svscode.service /etc/systemd/system/svscode.service
+sudo systemctl start svscode.service
+sudo systemctl enable svscode.service
